@@ -1,5 +1,5 @@
 # leaflet-test-timezones
-This is simply a project for me to test out using Leaflet in a couple hours. Not practically useful. It consumes data on US cities from simplemaps and creates points for each colored according to their timezone.
+This is simply a project for me to play around with Leaflet. Not practically useful. It consumes data on US cities from simplemaps and creates points for each colored according to their timezone.
 
 ![Example display of the generated map](example.png "Example")
 
