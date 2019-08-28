@@ -37,11 +37,3 @@ const points = L.geoJSON(geojson, {
 })
 
 points.addTo(mymap)
-
-// mymap.on('zoomend', function() {
-//   if (mymap.getZoom() < 9) {
-//     geoPointsSmall.addTo(mymap)
-//   } else {
-//     geoPointsLarge.addTo(mymap)
-//   }
-// });
