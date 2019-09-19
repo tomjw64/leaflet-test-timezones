@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "build:geojson": "node generate-geojson.js",
-    "build:index": "browserify index.js -o dist/bundle.js"
+    "build:index": "browserify index.js -o dist/bundle.js",
+    "lint": "standard ./generate-geojson.js ./index.js --fix"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "browserify": "^16.5.0",
-    "csv-parse": "^4.4.5",
+    "csv-parse": "^4.4.6",
     "geojson": "^0.5.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
   }
 }

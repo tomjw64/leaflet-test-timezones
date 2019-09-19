@@ -1,5 +1,5 @@
 const fs = require('fs')
-const geojson = require('geojson');
+const geojson = require('geojson')
 const parse = require('csv-parse/lib/sync')
 
 const citiesDataPath = 'uscities.csv'
@@ -17,6 +17,6 @@ const keepKeys = [
   'id'
 ]
 
-const geodata = geojson.parse(records, {Point: ['lat', 'lng'], include: keepKeys});
+const geodata = geojson.parse(records, { Point: ['lat', 'lng'], include: keepKeys })
 
 fs.writeFileSync('geodata.json', JSON.stringify(geodata))
